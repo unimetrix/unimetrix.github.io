@@ -26,11 +26,11 @@ function App() {
           <Header />
           <Routes>
             <Route
-              path="/front/"
+              path="/"
               element={<Home />}
             />
             <Route
-              path="/front/project/:id"
+              path="/project/:id"
               element={(<ProjectPage />)}
             />
             <Route
