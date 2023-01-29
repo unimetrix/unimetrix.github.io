@@ -20,13 +20,9 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
-    
       - id: build-publish
         name: Deploy React to GitHub Pages
         uses: bitovi/github-actions-react-to-ghp@v1.2.0
         with:
-          checkout: false
           path: build
   
