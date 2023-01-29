@@ -26,7 +26,7 @@ function Home() {
 
   return (
     <div className="home">
-      {trends && (<Projects title="Trends" projects={trends} />)}
+      {trends && (<Projects title="Projects" projects={trends} />)}
     </div>
   );
 }

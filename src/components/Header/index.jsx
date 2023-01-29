@@ -9,7 +9,6 @@ import { decodeToken } from 'react-jwt';
 import { userState, connectedState } from '../../atome/atome';
 
 import Logo from './Logo';
-import Menu from './Menu';
 import Select from './Select';
 
 // eslint-disable-next-line react/prop-types, no-unused-vars
@@ -31,7 +30,6 @@ function Header() {
     <div className="header">
       <Logo />
       <Select />
-      <Menu />
     </div>
   );
 }

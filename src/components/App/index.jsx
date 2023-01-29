@@ -3,7 +3,6 @@ import { Routes, Route } from 'react-router-dom';
 import { RecoilRoot } from 'recoil';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Header from '../Header';
-import Footer from '../Footer';
 import Home from '../Home';
 import Error from '../Error';
 import NewPassword from '../NewPassword';
@@ -49,7 +48,6 @@ function App() {
               element={<Error />}
             />
           </Routes>
-          <Footer />
         </RecoilRoot>
       </ThemeProvider>
     </div>

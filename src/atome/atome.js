@@ -19,11 +19,7 @@ export const userState = atom({
 
 export const urlState = atom({
   key: 'urlState',
-  default: (
-    process.env.REACT_APP_LOCAL
-      ? process.env.REACT_APP_API_DEV
-      : process.env.REACT_APP_API_PROD
-  ),
+  default: 'https://preprod-carbonable-indexer.fly.dev',
 });
 
 export const favoritesState = atom({
