@@ -1,0 +1,22 @@
+.about {
+    flex-grow: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.about-logo-chantier {
+    width: 1.4rem;
+}
+
+.about-text {
+    margin-left: 1rem;
+    font-size: 0.6em;
+}
+
+.about-text-rights {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 0.6rem;
+}

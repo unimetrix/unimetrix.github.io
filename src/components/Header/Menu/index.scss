@@ -1,0 +1,19 @@
+.menu {
+    display: flex;
+    gap: 1rem;
+}
+.menu-connected{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+.menu-connected >p{
+    padding-left: 0.5rem;
+}
+.menu-connected--userlogo{
+    zoom:0.03;
+    -webkit-filter: invert(0%);
+    vertical-align: middle;
+}

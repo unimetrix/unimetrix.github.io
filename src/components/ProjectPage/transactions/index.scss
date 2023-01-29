@@ -1,0 +1,16 @@
+@use 'src/styles/vars';
+
+.transaction-container {
+    border-radius: 1rem;
+    overflow: clip;
+    flex-grow: 1;
+    margin: 1rem;
+    box-sizing: content-box;
+}
+
+.transaction-container>h1 {
+    text-align: left;
+    background-color: #EEEEEEDD;
+    width: 100%;
+    padding: 1rem;
+}

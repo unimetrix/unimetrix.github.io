@@ -1,0 +1,12 @@
+@use 'src/styles/vars';
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    background-color: #{vars.$header-color};
+    box-shadow: #{vars.$box-shadow-color} 0px 1px 0px 0px;
+}

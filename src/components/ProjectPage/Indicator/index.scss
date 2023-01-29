@@ -1,0 +1,18 @@
+@use 'src/styles/vars';
+
+.indicator {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    overflow: clip;
+    border: 1px solid #{vars.$box-shadow-color};
+    border-radius: 1rem;
+    background-color: darken(vars.$body-color, 1);
+    flex-grow: 1;
+
+    &__title {
+        background-color: #{vars.$title-background-color};
+        width: 100%;
+        padding: 1rem;
+    }
+}

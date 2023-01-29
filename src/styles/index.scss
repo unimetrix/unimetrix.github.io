@@ -1,0 +1,12 @@
+@use 'reset';
+@use 'vars';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  background-color:#{vars.$body-color};
+}

@@ -1,0 +1,30 @@
+@use 'src/styles/vars';
+
+.project {
+
+  &__page {
+    flex-grow: 1;
+    height: auto;
+    background: radial-gradient(at bottom, #9ab6d666 0%, #FFFFFF00 100%);
+
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+
+    @media screen and (min-width: 1024px) {
+      width: 60%;
+    }
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+}

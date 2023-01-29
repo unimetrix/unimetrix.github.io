@@ -1,0 +1,15 @@
+@use 'src/styles/vars';
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: #{vars.$footer-color};
+    width: 100%;
+    bottom: 0;
+    height: 5rem;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    color: #{vars.$second-text-color};
+}

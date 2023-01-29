@@ -1,0 +1,52 @@
+@use 'src/styles/vars';
+
+.mint {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+
+    &__info {
+        height: 100%;
+        flex-grow: 1;
+        padding: 1rem;
+        min-width: 15rem;
+
+        &__title {
+            padding: 0 0 1rem 1rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid darken(vars.$box-shadow-color, 5);
+            text-align: center;
+        }
+
+        &__container {
+            padding-left: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+
+            &--values {
+                text-align: right;
+            }
+
+            &--labels {
+                text-align: right;
+            }
+        }
+
+        &__item {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    &__graph {
+        height: 100%;
+        flex-grow: 1;
+    }
+
+}

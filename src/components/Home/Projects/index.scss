@@ -1,0 +1,81 @@
+@use 'src/styles/vars';
+
+.container {
+    padding: 2rem;
+    margin: 2rem;
+    color: #{vars.$main-text-color};
+
+    &--trends {
+        border-bottom: 1px solid darken(vars.$box-shadow-color, 5);
+    }
+
+    &--title {
+        margin-bottom: 2rem;
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 700;
+
+        @media screen and (min-width: 600px) {
+            letter-spacing: 1rem;
+        }
+    }
+}
+
+.projects {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.project-slide {
+    padding: 0 0.5rem;
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    vertical-align: center;
+    cursor: pointer;
+    opacity: 0.5;
+
+    &--left {
+        left: -10%;
+        transform: translate(0, -50%);
+
+        @media screen and (min-width: 600px) {
+            left: 0;
+        }
+
+        &:before {
+            content: "←";
+            font-family: "slick";
+            font-size: 60px;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+        }
+    }
+
+    &--right {
+        right: -10%;
+        transform: translate(0, -50%);
+
+        @media screen and (min-width: 600px) {
+            right: 0;
+        }
+
+        &:before {
+            content: "→";
+            font-family: "slick";
+            font-size: 60px;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+        }
+    }
+
+    &:hover {
+        opacity: 0.75;
+        transition: all 0.3s;
+    }
+}

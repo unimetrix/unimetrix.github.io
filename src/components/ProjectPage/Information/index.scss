@@ -1,0 +1,46 @@
+@use 'src/styles/vars';
+
+.information {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    overflow: clip;
+    border: 1px solid #{vars.$box-shadow-color};
+    border-radius: 1rem;
+    min-width: 20rem;
+    background-color: darken(vars.$body-color, 1);
+    flex-grow: 1;
+
+    &__title {
+        background-color: #EEEA;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    &__list {
+        padding: 0.5em 2em;
+        font-size: small;
+    }
+
+    &__sub-list {
+        list-style: circle;
+    }
+
+    &__item {
+        padding: 1em 0;
+        text-overflow: clip ellipsis;
+
+        &--link {
+            display: block;
+            padding: 0.5em 0;
+
+            &:hover {
+                color: blue;
+            }
+        }
+    }
+
+    &__sub-item {
+        margin-left: 2rem;
+    }
+}

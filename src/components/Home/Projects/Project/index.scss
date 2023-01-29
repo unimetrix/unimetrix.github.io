@@ -1,0 +1,64 @@
+@use 'src/styles/vars';
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 1rem;
+    height: 20rem;
+    width: 20rem;
+    overflow: clip;
+
+    border-radius: 1rem;
+    box-sizing: border-box;
+
+    cursor: default;
+    pointer-events: none;
+    color: #{vars.$main-text-color};
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: box-shadow 0.3s;
+
+    &--dynamic {
+        cursor: pointer;
+        pointer-events: all;
+        margin: 1rem auto;
+        width: unset;
+        max-width: 20rem;
+
+        @media screen and (min-width: 600px) {
+
+            &:hover {
+                box-shadow: 0px 0px 10px 5px #000A;
+            }
+        }
+
+    }
+
+    &--title {
+        background-color: #{vars.$title-background-color};
+        pointer-events: none;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    &--description {
+        max-height: 5rem;
+        background-color: #{vars.$title-background-color};
+        pointer-events: none;
+        padding: 1rem;
+
+        &>p {
+            text-align: center;
+            font-size: 0.8rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            line-clamp: 4;
+            -webkit-box-orient: vertical;
+        }
+    }
+}

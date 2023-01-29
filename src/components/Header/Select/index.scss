@@ -1,0 +1,32 @@
+@use 'src/styles/vars';
+
+.select {
+    display: flex;
+    justify-content: center;
+    flex-grow: 2;
+    color: #{vars.$main-text-color};
+}
+
+#select-label {
+    color: #{vars.$main-text-color};
+}
+
+.select-item{
+    display: flex;
+    justify-content: space-between;  
+    ALIGN-ITEMS:center;
+    width: 100%;
+    cursor: default;
+}
+.select-item--name{
+    vertical-align: baseline;
+    cursor: pointer;
+
+}
+.select-item--btnfav{
+    z-index: 7;
+    
+}
+.select-item--btnfav-logo{
+    zoom: 0.2;
+}
