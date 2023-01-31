@@ -89,7 +89,10 @@ function Transaction() {
   const [transactions, setTransactions] = useState([]);
   async function getTransaction(projectId) {
     const res = await axios(`${url}/projects/${projectId}/transfers`);
-    setTransactions(res.data);
+    const txs = res.data
+      .sort((p, n) => n.tokenId - p.tokenId)
+      .sort((p, n) => new Date(n.time) - new Date(p.time));
+    setTransactions(txs);
   }
 
   const style = {
