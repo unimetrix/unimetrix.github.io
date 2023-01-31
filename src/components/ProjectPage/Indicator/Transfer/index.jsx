@@ -139,7 +139,7 @@ function Transfer() {
       },
       interaction: {
         hover: false,
-        hideEdgesOnDrag: true,
+        hideEdgesOnDrag: false,
         tooltipDelay: 200,
         dragView: true,
       },

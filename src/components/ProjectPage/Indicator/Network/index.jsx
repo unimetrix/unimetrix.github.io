@@ -78,7 +78,7 @@ function Network() {
     );
     network?.on('selectNode', (event) => {
       if (event.nodes?.length === 1) {
-        window.location.replace(`https://www.mintscan.io/juno/account/${event.nodes[0]}`);
+        window.location.replace(`https://starkscan.co/contract/${event.nodes[0]}`);
       }
     });
     network.on('hoverNode', () => {
